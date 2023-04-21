@@ -17,9 +17,12 @@ Follow one of the following licenses.
 
 ## 更新履歴
 
-既知のバグ
-- 特定環境でダウンロード画像が正常に描画されない不具合あり？
-    - html2canvasの安定感……
+2023-04-21 `v0.1.2`
+- 一部環境でダウンロード画像が正常に描画されないバグを修正(`style.css`)
+    - たぶんhtml2canvasがinheritが来たときに渡された要素の親の計算値を読めてない
+        - そもそもinheritを参照する事態にならないように修正
+    - そしてbox-shadowの描画も不安定？
+        - box-shadow一応削除しておいた
 
 2023-04-21 `v0.1.1`
 - .nojekyllを追加

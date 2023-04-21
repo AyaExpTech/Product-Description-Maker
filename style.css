@@ -144,8 +144,6 @@ section.pre {
     width: 800px;
     background: white;
     padding: 0.5rem;
-    border-radius: 0.5rem;
-    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.7);
 }
 
 section.pre * {
@@ -165,11 +163,13 @@ section.pre>h2 {
     border-color: #224;
     border-left: 0.5rem solid;
     border-bottom: 0.125rem solid;
+    background: white;
 }
 
 section.pre>div {
     display: flex;
     gap: 1rem;
+    background: white;
 }
 
 section.pre>div>* {
