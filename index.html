@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <!-- CSS読み込み -->
+    <link rel="stylesheet" href="style.css">
+    <!-- 前提スクリプト -->
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/AyaExpTech/AXT-func.js@v3.4.0/script.min.js"></script>
+    <!-- スクリプト読み込み -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <article>
+        <h1>AXT_Product-Description-Maker</h1>
+        <!-- 入力欄 -->
+        <section class="in">
+            <div class="name">
+                <h3>タイトル</h3>
+                <input type="text">
+            </div>
+            <div class="image">
+                <h3>画像</h3>
+                <input type="file">
+            </div>
+            <div class="desc">
+                <h3>説明</h3>
+                <input type="text">
+                <button onclick="addDescInput()">&#xf067</button>
+            </div>
+            <div class="list">
+                <h3>一覧表</h3>
+                <textarea name=""></textarea>
+            </div>
+        </section>
+        <!-- 出力画像 -->
+        <section class="pre">
+            <h2>タイトル</h2>
+            <div>
+                <img src="" alt="">
+                <ul>
+                    <li>説明</li>
+                </ul>
+            </div>
+            <table>
+            </table>
+        </section>
+        <!-- 再描画ボタン -->
+        <button onclick="redrawPreview()">&#xf5ae</button>
+        <!-- ダウンロードボタン -->
+        <button onclick="download()">&#xf019</button>
+        <!-- クリアボタン -->
+        <button onclick="location.reload()">&#xf1f8</button>
+    </article>
+</body>
+
+</html>

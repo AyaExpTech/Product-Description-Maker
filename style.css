@@ -1,0 +1,212 @@
+/*==============================================================
+    webフォントの読み込み
+==============================================================*/
+
+/* 'M PLUS 1p' */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500&display=swap');
+
+/* 'Font Awesome 6 Free' */
+@import url('https://use.fontawesome.com/releases/v6.4.0/css/all.css');
+
+/*==============================================================
+    Normalize.css
+==============================================================*/
+
+* {
+    margin: 0;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ebebeb;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+
+:where(ul, ol, li) {
+    padding-left: revert;
+}
+
+/*==============================================================
+    背景画像
+==============================================================*/
+
+body {
+    background: linear-gradient(to bottom, #303030, #111);
+    min-height: 100vh;
+}
+
+.bg {
+    position: fixed;
+    pointer-events: none;
+    z-index: -100;
+    width: 100%;
+    height: 100%;
+}
+
+.bg>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.25) grayscale(0.75);
+}
+
+/*==============================================================
+    全体
+==============================================================*/
+
+body>article {
+    width: 100%;
+    padding: 2rem;
+}
+
+article :where(h1, h3) {
+    width: 100%;
+    text-align: center;
+}
+
+article>*+* {
+    margin-top: 1rem;
+}
+
+/*==============================================================
+    入力部分
+==============================================================*/
+
+section.in {
+    display: flex;
+    gap: 1rem;
+}
+
+section.in>div {
+    width: 100%;
+}
+
+section.in>div>*+* {
+    margin-top: 0.67rem;
+}
+
+input {
+    color: #171717;
+    background-color: #ebebeb;
+    padding: 0.25rem;
+    width: 100%;
+    border-radius: 0.25rem;
+}
+
+textarea {
+    resize: vertical;
+    width: 100%;
+    height: 10rem;
+    color: #171717;
+    background-color: #ebebeb;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+}
+
+/*==============================================================
+    ボタン共通
+==============================================================*/
+
+button {
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+    line-height: 2;
+    border-radius: 2rem;
+    color: #333;
+    scale: 1;
+    box-shadow: 0px 1px 7px 0px rgba(255, 255, 255, 0.75);
+    margin-left: 50%;
+    transform: translateX(-50%) translateY(-1px);
+    transition: all 0.3s;
+}
+
+button:hover {
+    scale: 1.05;
+    box-shadow: 0px 2px 10px 0px rgba(255, 255, 255, 0.8);
+    transform: translateX(-50%) translateY(-2px);
+}
+
+button:active {
+    scale: 0.95;
+    box-shadow: 0px 0px 3px 0px rgba(255, 255, 255, 0.7);
+    transform: translateX(-50%) translateY(0px);
+}
+
+/*==============================================================
+    プレビュー欄
+==============================================================*/
+
+section.pre {
+    margin: 4rem calc(calc(100% - 800px) / 2) 1rem;
+    width: 800px;
+    background: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.7);
+}
+
+section.pre * {
+    color: #171717;
+}
+
+/*==============================================================
+    画像内スタイル
+==============================================================*/
+
+section.pre>*+* {
+    margin-top: 0.5rem;
+}
+
+section.pre>h2 {
+    padding-left: 0.5rem;
+    border-color: #224;
+    border-left: 0.5rem solid;
+    border-bottom: 0.125rem solid;
+}
+
+section.pre>div {
+    display: flex;
+    gap: 1rem;
+}
+
+section.pre>div>* {
+    width: calc(50% - 0.5rem);
+}
+
+section.pre>div>ul {
+    margin: auto;
+}
+
+section.pre>div>img {
+    object-fit: contain;
+}
+
+section.pre>table {
+    width: 100%;
+    border-radius: 0.5rem;
+    background-color: #ccc;
+    border-spacing: 0.25rem;
+}
+
+section.pre>table td {
+    border-radius: 0.5rem;
+    padding: 0.1rem;
+    text-align: center;
+    background-color: #ddd;
+}
+
+section.pre>table tr:nth-child(odd)>td {
+    background-color: #bfbfbf;
+}
+
+section.pre>table tr:first-child>td {
+    background-color: #aaa;
+    font-weight: bolder;
+}
+
+section.pre>table:not(:has(td)) {
+    display: none;
+}
