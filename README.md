@@ -21,6 +21,9 @@ Follow one of the following licenses.
 - 特定環境でダウンロード画像が正常に描画されない不具合あり？
     - html2canvasの安定感……
 
+2023-04-21 `v0.1.1`
+- .nojekyllを追加
+
 2023-04-21 `v0.1.0`
 - 非公開リポジトリから移転
 - 入力クリアボタンを追加(`index.html`)
