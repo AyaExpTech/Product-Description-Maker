@@ -85,6 +85,15 @@ section.in>div>*+* {
     margin-top: 0.67rem;
 }
 
+section.in>div.desc>div {
+    display: flex;
+}
+
+section.in>div.desc>div>input {
+    width: calc(100% - 2.5rem);
+    flex-wrap: nowrap;
+}
+
 input {
     color: #171717;
     background-color: #ebebeb;
@@ -135,6 +144,19 @@ button:active {
     transform: translateX(-50%) translateY(0px);
 }
 
+.desc input+button {
+    margin-left: 0.5rem;
+    transform: translateX(0%) translateY(-1px);
+}
+
+.desc input+button:hover {
+    transform: translateX(0%) translateY(-2px);
+}
+
+.desc input+button:active {
+    transform: translateX(0%) translateY(0px);
+}
+
 /*==============================================================
     プレビュー欄
 ==============================================================*/
@@ -166,22 +188,25 @@ section.pre>h2 {
     background: white;
 }
 
-section.pre>div {
-    display: flex;
-    gap: 1rem;
+section.pre>div{
     background: white;
 }
 
-section.pre>div>* {
+section.pre>div:has(+table>tbody) {
+    display: flex;
+    gap: 1rem;
+}
+
+section.pre>div:has(+table>tbody)>* {
     width: calc(50% - 0.5rem);
+}
+
+section.pre>div>img {
+    width: 100%;
 }
 
 section.pre>div>ul {
     margin: auto;
-}
-
-section.pre>div>img {
-    object-fit: contain;
 }
 
 section.pre>table {

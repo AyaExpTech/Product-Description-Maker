@@ -17,7 +17,7 @@ const redrawPreview = () => {
         }
         /* == 商品説明 == */
         $(`.pre>div>ul`)[0].innerHTML = "";
-        $(`.in>.desc>input`).forEach(e => {
+        $(`.in>.desc>div>input`).forEach(e => {
             let add = document.createElement('li');
             add.innerHTML = e.value;
             $(`.pre>div>ul`)[0].appendChild(add);
@@ -42,9 +42,17 @@ const redrawPreview = () => {
  * 説明記入欄を増やします
  */
 const addDescInput = () => {
-    let add = document.createElement('input');
-    add.type = `text`;
-    $(`.in>.desc>button`)[0].before(add);
+    let addInput = document.createElement("div");
+    let input = document.createElement('input');
+    input.type = "text";
+    let deleteButton = document.createElement('button');
+    deleteButton.textContent = "\u{f55a}";
+    deleteButton.addEventListener('click', (event) => {
+        event.srcElement.parentNode.parentNode.removeChild(event.srcElement.parentNode);
+    })
+    addInput.appendChild(input);
+    addInput.appendChild(deleteButton);
+    $(`.in>.desc>button`)[0].before(addInput);
 }
 
 /**
