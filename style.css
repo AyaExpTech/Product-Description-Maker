@@ -208,6 +208,8 @@ section.pre>div:has(+table>tbody) {
 section.pre>div:has(+table>tbody)>* {
     width: calc(50% - 0.5rem);
     object-fit: contain;
+    max-height: 24rem;
+    margin: auto;
 }
 
 section.pre>div>img {
