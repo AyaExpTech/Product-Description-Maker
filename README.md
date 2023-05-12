@@ -13,9 +13,13 @@ Follow one of the following licenses.
 
 - "AeTOS for Seller" …… https://axtech.dev/license/#aetos-for-seller
 
-※このツールを用いて生成された画像の著作権はユーザーに帰属します。
+※このツールを用いて生成された画像の著作権はこのツールの製作者に帰属しません。
 
 ## 更新履歴
+
+2023-05-12 `v0.2.1`
+- 画像サイズが極端に縦長/横長な場合において画像が引き伸ばされた状態で描画される不具合の修正
+    - 画像に対して`object-fit: contain;`を追加しただけ。完全に忘れてました……
 
 2023-04-24 `v0.2.0`
 - 説明記入欄を自由に増減できるように
@@ -28,6 +32,7 @@ Follow one of the following licenses.
         - そもそもinheritを参照する事態にならないように修正
     - そしてbox-shadowの描画も不安定？
         - box-shadow一応削除しておいた
+        - 2023-05-12追記)html2canvasはbox-shadowの描画にバグを大量に持っているらしい
 
 2023-04-21 `v0.1.1`
 - .nojekyllを追加

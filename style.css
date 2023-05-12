@@ -188,7 +188,7 @@ section.pre>h2 {
     background: white;
 }
 
-section.pre>div{
+section.pre>div {
     background: white;
 }
 
@@ -199,6 +199,7 @@ section.pre>div:has(+table>tbody) {
 
 section.pre>div:has(+table>tbody)>* {
     width: calc(50% - 0.5rem);
+    object-fit: contain;
 }
 
 section.pre>div>img {
