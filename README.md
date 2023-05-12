@@ -47,3 +47,5 @@ Follow one of the following licenses.
 ## 使い方
 
 察してください
+
+https://ayaexptech.github.io/Product-Description-Maker/
