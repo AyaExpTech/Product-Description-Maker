@@ -1,4 +1,4 @@
-# AXT_Product-Description-Maker
+# Product-Description-Maker
 
 製品などの簡易的な説明画像を作成するツールです。  
 製品に限らず何でも使えると思います。
@@ -16,6 +16,10 @@ Follow one of the following licenses.
 ※このツールを用いて生成された画像の著作権はこのツールの製作者に帰属しません。
 
 ## 更新履歴
+
+2023-05-12 `v0.2.3`
+- ページのタイトルを`Demo`から`Product-Description-Maker`に変更(変更忘れてた)
+- faviconとOGPを設定(完全に忘れてた)
 
 2023-05-12 `v0.2.2`
 - 著作権表記をページ上に追加(追加忘れてた)
