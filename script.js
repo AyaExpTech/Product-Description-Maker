@@ -68,3 +68,8 @@ const download = () => {
         });
     });
 }
+
+/**
+ * 一覧表をTSV形式にしてコピー
+ */
+const copyList = () => void (navigator.clipboard.writeText($(".list>textarea")[0].value.replaceAll(",", "\t")));

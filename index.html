@@ -25,7 +25,7 @@
 <body>
     <article>
         <h1>Product-Description-Maker</h1>
-        <p class="version">ver0.2.4 (2023-05-12 released)</p>
+        <p class="version">ver0.3.0 (2023-05-15 released)</p>
         <p class="credit">©2023- <a href="https://twitter.com/AyaExpTech">AyaExpTech</a>,
             <a href="https://twitter.com/AyaKoto_info">Ayasaka-Koto</a>
             (Licensed by "<a href="https://axtech.dev/license/#aetos-for-seller">AeTOS for Seller</a>")
@@ -64,12 +64,15 @@
             <table>
             </table>
         </section>
-        <!-- 再描画ボタン -->
-        <button onclick="redrawPreview()">&#xf5ae</button>
-        <!-- ダウンロードボタン -->
-        <button onclick="download()">&#xf019</button>
-        <!-- クリアボタン -->
-        <button onclick="location.reload()">&#xf1f8</button>
+        <!-- ボタン -->
+        <button onclick="redrawPreview()">&#xf5ae</button><span style="opacity:.5;font-size:small;">…
+            プレビューを再描画</span>
+        <button onclick="copyList()">&#xf328</button><span style="opacity:.5;font-size:small;">…
+            一覧表をTSV形式でコピー</span>
+        <button onclick="download()">&#xf019</button><span style="opacity:.5;font-size:small;">…
+            画像をダウンロード</span>
+        <button onclick="location.reload()">&#xf1f8</button><span style="opacity:.5;font-size:small;">…
+            初めからやり直す</span>
     </article>
 </body>
 
