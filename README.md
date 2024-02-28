@@ -7,15 +7,11 @@ https://ayaexptech.github.io/Product-Description-Maker/
 
 ## 利用規約
 
-Copyright (c) 2023-  
-AyaExpTech, Ayasaka-Koto
+Copyright (c) 2023- Ayasaka-Koto
 
-以下の規約のいずれかに従ってください。  
-Follow one of the following licenses.
-
-- "AeTOS for Seller" …… https://axtech.dev/license/#aetos-for-seller
-
-※このツールを用いて生成された画像の著作権はこのツールの製作者に帰属しません。
+日本の法令や公序良俗に反さなければ自由に利用できます。  
+再配布時は著作者(原作者)として"綾坂こと"を表記してください。  
+なお、このツールを用いて生成された画像の著作権はこのツールの著作者に帰属しません。
 
 ## 更新履歴
 
